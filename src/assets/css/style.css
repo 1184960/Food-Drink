@@ -517,7 +517,7 @@ ol {
 	height: 25px;
 	left: 0;
 	top: 0;
-	background-image: url(/assets/img/icon/check.png);
+	background-image: url(../img/icon/check.png);
 }
 
 .add-warp .add-text .at-style {
@@ -939,7 +939,7 @@ ol {
 	-moz-appearance: none;
 	-ms-appearance: none;
 	appearance: none;
-	background-image: url(/assets/img/icon/angle-bottom.png);
+	background-image: url(../img/icon/angle-bottom.png);
 	background-repeat: no-repeat;
 	background-position: right 15px center;
 	padding-right: 35px;
@@ -1221,7 +1221,7 @@ ol {
 }
 
 .recipe-filter-warp .filter-form input[type=checkbox]:checked+label:after {
-	background-image: url("/assets/img/icon/check-2.png");
+	background-image: url("../img/icon/check-2.png");
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-color: #ff2a6b;
