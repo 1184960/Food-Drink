@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import example from '../../../Ingredienti.json';
 
 @Component({
   selector: 'app-test',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./test.component.css']
 })
 export class TestComponent implements OnInit {
+  
+  constructor() {
+    example.forEach(element => {
 
-  constructor() { }
-
+    });
+   }
+   
   ngOnInit() {
+    
   }
 
 }
