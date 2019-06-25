@@ -3,13 +3,10 @@
 		<div class="sf-warp">
 			<div class="container">
 				<form class="big-search-form">
-					<select>
-						<option>All Recipes Categories</option>
-						<option>Pizza</option>
-						<option>Salads</option>
-						<option>Desserts</option>
-						<option>Side Dishes</option>
-					</select>
+					<input type="search" list="languages" placeholder="Pick a programming language.." size="10">
+					<datalist id="languages">
+						<option *ngFor="let item of ciaone" value="{{item}}"></option>
+					</datalist>
 					<select>
 						<option>All Ingredients</option>
 						<option>Breakfast</option>

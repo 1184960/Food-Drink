@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'www';
+  public static baseUrlServer = "http://localhost:3000";
 }

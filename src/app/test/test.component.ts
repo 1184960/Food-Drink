@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import example from '../../../Ingredienti.json';
+import { HttpClient } from '@angular/common/http';
+import { AppComponent } from '../app.component';
+
 
 @Component({
   selector: 'app-test',
@@ -7,12 +10,21 @@ import example from '../../../Ingredienti.json';
   styleUrls: ['./test.component.css']
 })
 export class TestComponent implements OnInit {
-  
-  constructor() {
-    example.forEach(element => {
 
+  ciaone = [];
+  
+  constructor(private httpClient: HttpClient) {
+    
+    example.forEach(element => {
+      this.ciaone.push(element.searchValue);
     });
-   }
+    
+    this.httpClient.get(AppComponent.baseUrlServer +'').subscribe((res)=>{
+      console.log(res);
+     });
+   
+    }
+    dropdownOptions = this.ciaone;
    
   ngOnInit() {
     
